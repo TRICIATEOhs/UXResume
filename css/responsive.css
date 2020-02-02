@@ -1,0 +1,55 @@
+/* Small devices (landscape phones, 576px and below) */
+@media (max-width: 575px) { 
+	.main-title .card-title {
+		font-family: 'Homemade Apple', cursive;
+		font-size: 1.5rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 767px) {
+	.hero-text {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	} 
+
+	.work-experiences .card-img {
+		max-width: 100px;
+		max-height: 150px;
+	}
+
+	.about-me .card-img {
+		max-width: 300px;
+		max-height: 450px;
+	}
+
+	.testimonials{
+		/* Sizing */
+		width: 100%;
+		height: max-content;
+	
+		/* Flexbox stuff */
+		display: flex;
+	
+		/* Background styles */
+		background-image: url(../images/section-scallop-image-mobile.png);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.testimonials .main-title {
+		margin: 2rem 0rem;
+	}
+
+	.contact-me img{
+		width: 50%;
+		margin-bottom: 2rem;
+	}
+}
+
+/* Large devices (desktops, 992px and below) */
+@media (min-width: 991px) { ... }
+
+/* Extra large devices (large desktops, 1200px and below) */
+@media (min-width: 1199px) { ... }

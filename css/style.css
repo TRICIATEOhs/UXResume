@@ -1,0 +1,237 @@
+body {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Sacramento', cursive;
+	font-family: 'Homemade Apple', cursive;*/
+	height: 100%;
+    overflow: auto;
+	color: #333;
+	font-size: 16px;
+}
+
+html {
+	height: 100%;
+    overflow: auto;
+}
+
+.logo-name {
+	max-width: 100px;
+	max-height: 40px;
+}
+
+.navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav > li{
+	margin-left:30px;
+	margin-right:30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+	font-weight: 600;
+}
+
+/*BANNER*/
+.hero-image {
+
+	/* Sizing */
+	width: 100%;
+	height: 110vh;
+
+	/* Flexbox stuff */
+	display: flex;
+
+	align-items: center;
+
+	/* Background styles */
+	background-image: url(../images/banner-image.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 5rem;
+	margin-top: -150px;
+}
+
+.hero-image h1 { 
+	font-family: 'Homemade Apple', cursive;
+}
+
+.hero-text {
+	/* Text styles */
+	text-align: left;
+	color: white; 
+	display:block;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	margin-bottom: 10rem;
+}
+
+/*END BANNER*/
+
+
+/*SECTION*/
+.section {
+	padding: 3rem 0;
+}
+  
+.section + .section {
+	margin-top: 2rem;
+}
+
+.section-content {
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-title .card-title {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+/*END SECTION*/
+
+/*CARD*/
+.card {
+	border: none;
+}
+
+.col-center {
+	align-self: center;
+}
+/*END CARD*/
+
+
+/*COLOURED CONTENT*/
+.coloured-content hr {
+	width: 4rem;
+	float: left;
+	margin-right: 0.5rem;
+	color: #333;
+	border: 0.5px solid;
+}
+
+.coloured-content .card {
+	margin-right: 2rem;
+	background-color: transparent;
+}
+
+.coloured-content .card-title {
+	font-family: 'Sacramento', cursive;
+	font-size: 20pt;
+}
+
+.coloured-content .card-subtitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.coloured-content span {
+	font-family: 'Sacramento', cursive;
+}
+/*END COLOURED CONTENT*/
+
+
+/*MY PROJECTS*/
+.my-projects {
+	background-color: #F3EDE6;
+}
+
+.my-projects .main-title {
+	margin: 2rem 0rem;
+}
+
+/*END MY PROJECTS*/
+
+
+/*WORK EXPERIENCES*/
+.work-experiences .main-title {
+	margin: 2rem 0rem 0rem 2rem;
+}
+
+.work-experiences p {
+	margin-inline-start: 4rem;
+	margin-inline-end: 4rem;
+}
+
+.work-experiences .job-title {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.work-experiences .job-duration {
+	margin-bottom: 2rem;
+	font-size: 14px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.carousel-control-next-icon {
+	background-image: url(../images/next.png);
+}
+
+.carousel-control-prev-icon {
+	background-image: url(../images/back.png);
+}
+
+/*END WORK EXPERIENCES*/
+
+
+/*TESTIMONIALS*/
+.testimonials{
+	/* Sizing */
+	width: 100%;
+	height: 100vh;
+
+	/* Flexbox stuff */
+	display: flex;
+
+	/* Background styles */
+	background-image: url(../images/section-scallop-image.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.testimonials .main-title {
+	margin-bottom: 2rem;
+}
+
+/*END TESTIMONIALS*/
+
+/*CONTACT ME*/
+.contact-me .media img{
+	width: 20px;
+	height: 20px;
+}
+
+.contact-me img{
+	width: 70%;
+}
+/*END CONTACT ME*/
+
+
+/*FOOTER*/
+.footer {
+	background-color: #F3EDE6;
+	padding: 3rem 0rem;
+}
+
+.footer img {
+	width: 20%;
+}
+
+.footer .card {
+	background-color: transparent;
+}
+  
+
+  /*ENDFOOTER */
