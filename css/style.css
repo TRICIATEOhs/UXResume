@@ -19,21 +19,23 @@ html {
 	max-height: 40px;
 }
 
-.navbar-nav.navbar-center {
-    position: relative;
-    left: 50%;
-    transform: translatex(-50%);
+/*NAV*/
+.navbar-nav {
+	position:relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.navbar-nav > li{
-	margin-left:30px;
-	margin-right:30px;
+#navbarNavAltMarkup a {
+	margin-left: 2rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
 	color: #fff;
 	font-weight: 600;
 }
+/*END NAV*/
+
 
 /*BANNER*/
 .hero-image {
