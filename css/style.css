@@ -7,6 +7,7 @@ body {
     overflow: auto;
 	color: #333;
 	font-size: 16px;
+	/*Pink: #F5EAEB*/
 }
 
 html {
@@ -30,10 +31,20 @@ html {
 	margin-left: 2rem;
 }
 
-.navbar-light .navbar-nav .nav-link {
-	color: #fff;
+#navbarNavAltMarkup a:hover {
+	color: #333;
 	font-weight: 600;
 }
+
+.navbar-light .navbar-nav .nav-link {
+	color: #333;
+	
+}
+
+.navbar {
+	background: rgba(255,255,255,0.6);
+}
+
 /*END NAV*/
 
 
@@ -48,6 +59,7 @@ html {
 	display: flex;
 
 	align-items: center;
+	justify-content: center;
 
 	/* Background styles */
 	background-image: url(../images/banner-image.png);
@@ -55,7 +67,7 @@ html {
 	background-position: center center;
 	background-repeat: no-repeat;
 	margin-bottom: 5rem;
-	margin-top: -150px;
+	margin-top: -100px;
 }
 
 .hero-image h1 { 
@@ -64,12 +76,12 @@ html {
 
 .hero-text {
 	/* Text styles */
-	text-align: left;
+	text-align: center;
 	color: white; 
 	display:block;
 	padding-left: 6rem;
 	padding-right: 6rem;
-	margin-bottom: 10rem;
+	margin-top: 6rem;
 }
 
 /*END BANNER*/

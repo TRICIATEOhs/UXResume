@@ -4,6 +4,11 @@
 		font-family: 'Homemade Apple', cursive;
 		font-size: 1.5rem;
 	}
+	
+	.navbar-light .navbar-nav .nav-link {
+		color: #333;
+		font-weight: 600;
+	}
 }
 
 /* Medium devices (tablets, 768px and below) */
@@ -49,7 +54,20 @@
 }
 
 /* Large devices (desktops, 992px and below) */
-@media (min-width: 991px) { ... }
+@media (max-width: 991px) {
+	.navbar-nav {
+		background-color: #F3EDE6;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		font-weight: normal;
+		color: #333;
+	}
+
+	#navbarNavAltMarkup a:hover {
+		font-weight: 600;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and below) */
 @media (min-width: 1199px) { ... }
