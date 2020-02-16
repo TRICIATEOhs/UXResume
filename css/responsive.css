@@ -9,6 +9,11 @@
 		color: #333;
 		font-weight: 600;
 	}
+
+	.banner-text {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 /* Medium devices (tablets, 768px and below) */
@@ -51,6 +56,7 @@
 		width: 50%;
 		margin-bottom: 2rem;
 	}
+	
 }
 
 /* Large devices (desktops, 992px and below) */

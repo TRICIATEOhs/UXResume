@@ -4,7 +4,7 @@ body {
 	/*font-family: 'Sacramento', cursive;
 	font-family: 'Homemade Apple', cursive;*/
 	height: 100%;
-    overflow: auto;
+
 	color: #333;
 	font-size: 16px;
 	/*Pink: #F5EAEB*/
@@ -12,7 +12,6 @@ body {
 
 html {
 	height: 100%;
-    overflow: auto;
 }
 
 .logo-name {
@@ -45,10 +44,60 @@ html {
 	background: rgba(255,255,255,0.6);
 }
 
+.navbar-nav .active {
+	font-weight: 600;
+}
+
+.subpage-navbar .navbar {
+	background: #fff;
+	box-shadow: 2px 2px 8px #d3d3d3;
+}
+
 /*END NAV*/
 
+/*SIDE NAV*/
+	/* unvisited link */
+	.side-nav .list-group a {
+		color: #323232;
+	}
+  
+	.side-nav .list-group-item.active{
+		background-color: transparent; 
+	}
 
-/*BANNER*/
+	.side-nav .list-group .active a {
+		text-decoration: none;
+		color: #323232;
+		background-color: #F3EDE6; 
+		font-weight: 600;
+	}
+
+	.side-nav .list-group a {
+		padding: 5px 20px;
+	}
+
+	/* Mouse over link */
+	.side-nav .list-group .active a:hover {
+		text-decoration: none;
+		color: #323232;
+		background-color: #F3EDE6; 
+		font-weight: 600;
+	}
+
+	.side-nav .list-group a:hover {
+		color: #323232;
+		background-color: #F3EDE6; 
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.side-nav .list-group-item {
+		border: 0px;
+	}
+/*END SIDE NAV */
+
+
+/*HERO*/
 .hero-image {
 
 	/* Sizing */
@@ -84,6 +133,34 @@ html {
 	margin-top: 6rem;
 }
 
+/*END HERO*/
+
+
+/*BANNER*/
+.banner-image {
+	/* Sizing */
+	width: 100%;
+	height: 42vh;
+
+	/* Flexbox stuff */
+	display: flex;
+	align-items: center;
+	/* Background styles */
+	background-image: url(../images/subpage-banner-scallop.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 2rem;
+	margin-top: -50px;
+}
+
+.banner-text {
+	/* Text styles */
+	display:block;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	margin-top: 2rem;
+}
 /*END BANNER*/
 
 
@@ -157,6 +234,27 @@ html {
 
 .my-projects .main-title {
 	margin: 2rem 0rem;
+}
+
+.my-projects a {
+	color: #333;
+}
+
+.my-projects a:hover {
+	text-decoration: none;
+	background-color: #fff;
+	padding: 0.25rem 0.5rem;
+}
+
+#gethrright a, #portfolio a {
+	color: #333;
+	font-size: 0.8rem;
+}
+
+#gethrright a:hover, #portfolio a:hover {
+	text-decoration: none;
+	background-color: #F5EAEB;
+	padding: 0.25rem 0.5rem;
 }
 
 /*END MY PROJECTS*/
@@ -233,6 +331,29 @@ html {
 /*END CONTACT ME*/
 
 
+/*CONTENT HOLDER*/
+.content-holder h2 {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.content-holder .row {
+	margin-bottom: 2rem;
+}
+
+.wireframe-text {
+	color: #bdbdbd;
+	font-size: 0.85rem;
+}
+
+.workshop img {
+	max-width: 200px;
+	max-height:250px;
+	padding: 1rem;
+}
+/*END CONTENT HOLDER*/
+
+
 /*FOOTER*/
 .footer {
 	background-color: #F3EDE6;
@@ -246,6 +367,4 @@ html {
 .footer .card {
 	background-color: transparent;
 }
-  
-
-  /*ENDFOOTER */
+/*ENDFOOTER */
