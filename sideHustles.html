@@ -30,28 +30,6 @@
 
 <body>
 
-  <!--Navbar -->
-  <!--
-  <div class="subpage-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Home</a>
-          <a class="nav-item nav-link" href="projectOne.html">Managing Disease Outbreaks in Singapore</a>
-          <a class="navbar-brand d-none d-lg-block" href="#index.html"><img src="images/name-black.png"
-              class="img-fluid logo-name" alt="triciateo"></a>
-          <a class="nav-item nav-link" href="projectTwo.html">Applying for Permanent Residence</a>
-          <a class="nav-item nav-link active" href="#">Side Hustles</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-  -->
-
   <div class="subpage-navbar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -98,6 +76,7 @@
               <li class="list-group-item active" id="liDisclaimer"><a href="#disclaimer">Disclaimer</a></li>
               <li class="list-group-item" id="liGethrright"><a href="#gethrright">www.GetHRRight.sg</a></li>
               <li class="list-group-item" id="liPortfolio"><a href="#portfolio">UXResume</a></li>
+              <li class="list-group-item" id="liPR"><a href="#pr">Permanent Residency in SG</a></li>
             </ul>
           </nav>
         </div>
@@ -118,11 +97,11 @@
                 so important for those who are mainly involved in prototyping and UI design. However, I choose to
                 believe
                 that having the capabilities and knowledge of front-end development is essential in designing realistic
-                solutions.
+                solutions. All projects done are pro bono (unless stated otherwise).
               </p>
 
               <p>
-                All projects done are pro bono (unless stated otherwise), and more of my portfolio will be available upon request!
+                Most of my work projects are Government-based and although it is non-confidential, I decided not to publish them onto an online platform (just to be safe). Therefore, if you'd like to view more of my works, it will be available upon request (and of course, only non-confidential ones will be shared).
               </p>
 
             </div>
@@ -166,16 +145,56 @@
                   target="_blank" rel="noopener noreferrer">https://triciateohs.github.io/UXResume/ [2020]</a></p>
 
               <p>
-                Since more and more people are utilising online resumes, I thought that it's time for me to hop on the bandwagon as well!
+               <b>My UX portfolio is also a project!</b>
               </p>
 
               <p>
-                Though it's possible to easily create an online presence via wix.com, I find that it's more fun,
-                challenging and fulfiling to be able to design and build my very own site.
+                <ul>
+                  <li>
+                    <b>Research:</b> More people are utilising online resumes and I thought that maybe it is time for me to hop on the bandwagon as well! I Googled ways to create a UX portfolio and what people would be interested to look at! 
+                  </li>
+                  <li>
+                    <b>Design: </b>I did some basic paper prototyping here and there, and whipped out Adobe XD to form the structure of my website. I researched a lot on pinterest as well as looking at other UX Designers' portfolios. Most of them were utilising third-party tools with existing templates to build their site, and yes it was definitely very eye-catching and interactive. I am more of a pastel/neutral-toned kind of person, and as much as I wanted to stand out, I decided to choose a colour scheme and do whatever my heart desired - well, I kind of have the flexibilty to do what I want, so why not? :D
+                  </li>
+                  <li>
+                    <b>Develop: </b>Following the wireframes that I designed, I utilised bootstrap as a base for my development - and it's mobile friendly too!
+                  </li>
+                </ul>
               </p>
 
               <p>
-                If you have any feedback on how I can further improve my online resume, do let me know!
+                If you have any feedback on how I can further improve my online portfolio, do let me know!
+              </p>
+
+            </div>
+          </div>
+
+
+          <!-- PR -->
+          <div class="row sideHustleLinks" id="pr">
+            <div class="col">
+              <h2>Application of Permanent Residency in Singapore</h2>
+
+              <p>
+                When I was still a Web Developer, I was in-charge of maintaining and enhancing a system that allows
+                public to upload documents into a repository when they are applying to become a Permanent Resident in
+                Singapore. While utilising the system to perform testings, I felt that the user experience could be
+                further improved. Hence, I've decided to take the initiative to improve the experience and make it more
+                user-friendly.
+              </p>
+
+              <p>
+                As the system had to undergo a technical refresh, it could use a new look-and-feel. Hence, I did my
+                research and proposed my solution to the team for consideration.
+              </p>
+
+              <p><b>
+                The goal of the project is to move towards a paperless approach, to reduce the need for public to come
+                down physically to submit documents so as to improve the efficiency of e-Services application process.
+              </b></p>
+
+              <p>
+                <iframe src="https://onedrive.live.com/embed?cid=10056E1CB7CA27AF&amp;resid=10056E1CB7CA27AF%21186&amp;authkey=ADSDkp4RG8tFsAY&amp;em=2&amp;wdAr=1.3333333333333333" width="610px" height="481px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
               </p>
 
             </div>
@@ -231,23 +250,34 @@
       var disclaimer = $("#disclaimer").offset().top - 100;
       var gethrright = $("#gethrright").offset().top - 300;
       var portfolio = $("#portfolio").offset().top - 300;
+      var pr = $("#pr").offset().top - 300;
 
       if ($(window).scrollTop() >= disclaimer && $(window).scrollTop() < gethrright) {
         $("#liDisclaimer").addClass("active");
         $('#liPortfolio').removeClass("active");
         $('#liGethrright').removeClass("active");
+        $('#liPR').removeClass("active");
       }
 
       if ($(window).scrollTop() >= gethrright && $(window).scrollTop() < portfolio) {
         $("#liGethrright").addClass("active");
         $('#liPortfolio').removeClass("active");
         $('#liDisclaimer').removeClass("active");
+        $('#liPR').removeClass("active");
       }
 
-      if ($(window).scrollTop() >= portfolio) {
-        $("#liPortfolio").addClass("active");
+      if ($(window).scrollTop() >= portfolio && $(window).scrollTop() < pr) {
+        $("#liGethrright").addClass("active");
+        $('#liPortfolio').removeClass("active");
+        $('#liDisclaimer').removeClass("active");
+        $('#liPR').removeClass("active");
+      }
+
+      if ($(window).scrollTop() >= pr) {
+        $("#liPR").addClass("active");
         $('#liGethrright').removeClass("active");
         $('#liDisclaimer').removeClass("active");
+        $('#liPortfolio').removeClass("active");
       }
 
     });
