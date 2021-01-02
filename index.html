@@ -7,7 +7,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72589778-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-72589778-1');
@@ -23,371 +23,355 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Homemade+Apple|Sacramento|Source+Sans+Pro:400,600,600i,700,700i&display=swap"
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-  <title>Tricia Teo - UX Designer</title>
+  <title>Tricia Teo - UI/UX Designer</title>
 </head>
 
 <body>
 
-  <!--Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#home">Home</a>
-        <a class="nav-item nav-link" href="#aboutMe">About Me</a>
-        <a class="nav-item nav-link" href="#myProjects">My Projects</a>
-        <a class="navbar-brand d-none d-lg-block" href="#home"><img src="images/name-black.png"
-            class="img-fluid logo-name" alt="triciateo"></a>
-        <a class="nav-item nav-link" href="#workExperiences">Work Experiences</a>
-        <a class="nav-item nav-link" href="#testimonials">Testimonials</a>
-        <a class="nav-item nav-link" href="#contactMe">Contact Me</a>
+      <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="images/name-black.png"
+          class="img-fluid logo-name" alt="triciateo"></a>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="aboutMe.html">About Me</a>
+        <a class="nav-item nav-link" href="myWork.html">My Work</a>
+        <a class="nav-item nav-link" href="https://www.linkedin.com/in/tricia-teo-ux/" target="_blank">LinkedIn</a>
+        <a class="nav-item nav-link" href="mailto: tricia.ths@hotmail.com">tricia.ths@hotmail.com</a>
       </div>
     </div>
   </nav>
 
   <!--End Navbar -->
 
-  <!-- Banner -->
-  <div class="hero-image" id="home">
-    <div class="hero-text">
-      <h1>Hello I'm Tricia!</h1>
-      <h2>I'm a User Experience Designer.</h2>
+
+  <!--Above the fold-->
+  <div class="section above-the-fold">
+    <div class="container">
+      <div class="row no-gutters">
+
+        <div class="col col-center">
+
+          <div class="typewriter">
+            <h1>hello, I'm tricia</h1>
+          </div>
+
+          <div class="header-subtitle">
+            <span>UI/UX Designer</span> <br>
+            <span>- Specialised in Government Sectors</span>
+          </div>
+
+
+          <div class="media-icon">
+            <img class="align-self-start mr-1" src="./images/public/homepage/singapore.png" alt="singapore flag"> Based
+            in Singapore
+          </div>
+
+          <p>
+            I am a former Web Developer, turned UI/UX Designer with <span class="highlight">four years</span> of
+            experience conceptualising and crafting digital products.
+          </p>
+
+          <p>
+            Fundamental is the ability to clarify and simplify Users’ requirements, forging good client relations and
+            having a sound domain knowledge and technical competence in UX to match.
+          </p>
+
+        </div>
+
+        <div class="col col-center text-center">
+          <img src="images/public/homepage/profile-picture.png" class="card-img" alt="teddy bear">
+        </div>
+
+      </div>
     </div>
   </div>
-  <!-- End Banner -->
+
+  <!-- End Above the fold -->
 
 
-  <!--About Me-->
-  <div class="section about-me" id="aboutMe">
+  <!-- Area of expertise -->
+  <div class="section area-of-expertise">
     <div class="container">
 
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4 col-center text-center">
-            <img src="images/about-me-image.png" class="card-img" alt="about me">
-          </div>
-          <div class="col-md-8 col-center pr-md-2">
-            <div class="card-body main-title">
-              <h5 class="card-title">about me</h5>
-              <p class="card-text">Hello, I'm Tricia! I am a former Java Web Developer, turned User Experience Consultant.</p>
-              <p class="card-text">I threaded into this new challenge after firmly deciding to follow my passion in User Experience (UX), a change that has provided me opportunities to develop and express my creative bent whilst offering practical solutions to problems that Users face and need to make their work more productive.</p>
-              <p class="card-text">Fundamental is the ability to clarify and simplify Users’ requirements, forging good client relations and having a sound domain knowledge and technical competence in UX to match. These are the skillsets that I have developed from my work experience and training which will be an accretive asset to your organization.</p>
-
-              <p class="card-text">
-                <a href="http://www.linkedin.com/in/tricia-teo-ux" target="_blank"><img src="images/linkedin-logo.png" style="height:20px; width: 20px;" class="card-img-top" alt="linkedin icon"></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!--End About Me-->
-
-
-  <!--My Projects-->
-  <div class="section my-projects" id="myProjects">
-    <div class="container">
-
-      <div class="row">
-        <div class="col main-title text-center">
-          <h5 class="card-title">my projects</h5>
-        </div>
-      </div>
-
-      <div class="row coloured-content">
-
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
-            <a href="userInterfaceProjects.html" target="_blank">
-              <img src="images/UI_Samples/Sample_1/UI_Sample_1_1.png" style="height: 130px; max-width: 230px" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-              <a href="userInterfaceProjects.html" target="_blank"><h5 class="card-title">UI Designs</h5></a>
-              <p class="card-text">As most of my work projects are Government related, the UI designs showcased will mainly feature non-work related designs.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
-            <a href="projectHackathon.html" target="_blank">
-              <img src="images/ncsplus.png" style="height: 130px; max-width: 230px" class="card-img-top" alt="NCS Plus">
-            </a>
-            <div class="card-body">
-              <a href="projectHackthon.html" target="_blank"><h5 class="card-title">NCS Hackathon 2020</h5></a>
-              <p class="card-text">A one-stop crisis management (for contagious diseases) mobile application for NCS Employees to perform necessary measures needed to be taken during COVID-19.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
-            <a href="projectDiseaseOutbreak.html" target="_blank">
-              <img src="images/disease-outbreak.png" style="height: 130px; max-width: 230px" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-              <a href="projectDiseaseOutbreak.html" target="_blank"><h5 class="card-title">Managing Disease Outbreaks in Schools</h5></a>
-              <p class="card-text">This system is used for schools to keep track and monitor the health statuses of
-                students and teachers who are affected by contagious diseases happening around campus.</p>
-            </div>
-          </div>
-        </div>
-        
-
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
-            <a href="sideHustles.html" target="_blank">
-              <img src="images/gethrright-homepage.png" style="height: 130px; max-width: 230px" class="card-img-top" alt="GetHRRight">
-           </a>
-           <div class="card-body">
-            <a href="sideHustles.html" target="_blank"><h5 class="card-title">Side Hustles</h5></a>
-              <p class="card-text">List of my pro bono projects that I've done to enhance my skills in front-end designing. Watch this space as there are more to come in the future!</p>
-            </div>
-          </div>
-        </div>
-
+      <div class="text-center main-title">
+        <h3 class="grad">area of expertise</h3>
+        <p class="subtitle">Working with the Government Sectors has also made me more resilient and here’s why!</p>
       </div>
 
 
-
-    </div>
-  </div>
-  <!--End My Projects-->
-
-
-  <!--Work Experiences-->
-  <div class="section work-experiences" id="workExperiences">
-    <div class="container">
-
-      <div class="row">
-        <div class="col main-title">
-          <h5 class="card-title">work experiences</h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="card mb-3">
-          <div class="row no-gutters">
-            <div class="col-md-8 col-sm-12 pr-md-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mb-2">
+            <div class="card">
               <div class="card-body">
-                <div id="carouselContent" class="carousel slide" data-interval="false" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active p-4">
-                      <p class="job-title">Senior User Experience Consultant | NCS Pte Ltd</p>
-                      <p class="job-duration text-muted">Jan 2019 to Present</p>
-                      <p>
-                        • Responsible for understanding requirements, wireframing and performing Usability Testing with clickable prototypes – worked on 6 Government projects till date
-                      </p>
-                      <p>
-                      • Worked in silos and led a small team of 2 to plan out UX scope and schedule to meet project objectives
-                      </p>
-                      <p>
-                        • Worked together with managers, developers and overseas partners to develop, design, and
-                        implement user-facing solutions and drive alignments (i.e. typography, iconography, navigational
-                        patterns)
-                      </p>
-                      <p>
-                        • Conducted user testing of design concepts and prototype with over 30 participants as well as led a Design Validation Workshops with over 15 users
-                      </p>
-                      <p>
-                        • Participated in a 2 weeks NCS Hackathon and the team won the “People’s Favourite” segment (project can be found in online resume)
-                      </p>
-                      <p>
-                        • Obtained 2 UX certificates to level up skills - Design Innovation Leadership Workshop (By
-                        SUTD) and User Experience for Digital Products (By Republic Poly)
-                      </p>
-                      <p>
-                        • Nominated and accepted into the ‘Singtel-NCS Young Leader Talent Management Programme’ with effect from FY21
-                      </p>
-                    </div>
-                    <div class="carousel-item p-4">
-                      <p class="job-title">Application Consultant | NCS Pte Ltd</p>
-                      <p class="job-duration text-muted">October 2017 – January 2019</p>
-                      <p>
-                        • Developed, enhanced and maintained a public-facing Government website using Java, Java Server
-                        Faces (JSF) and Oracle SQL
-                      </p>
-                      <p>
-                        • Responsibilities included requirements definition, business analysis, coding and quality assurance of enhancements to the application
-                      </p>
-                      <p>
-                        • Conducted User Acceptance Testing (UAT) according to prepared test cases and provided technical assistance to various departments and our client
-                      </p>
-                      <p>
-                        • In-charged of a sub-application which involves providing application enhancements
-                        and maintenance support by analysing logs and resolving incidents reported
-                      </p>
-                      <p>
-                        • Performed bug fixing and raised Service Requests (SRs) to deploy changes
-                      </p>
-                      <p>
-                        • Involved in a design refresh using agile/scrum methodology which had daily stand-ups and a sprint of four months
-                      </p>
-                    </div>
-                    <div class="carousel-item p-4">
-                      <p class="job-title">User Experience Consultant | Xtremax Pte Ltd</p>
-                      <p class="job-duration text-muted">July 2016 – August 2017</p>
-                      <p>
-                        • Performed user research, information architecture restructuring, usability testing to reaffirm
-                        solutions and website strategizing to enhance user-centric design functionalities
-                      </p>
-                      <p>
-                        • Led the revamp of 2 Government websites from requirements gathering, designing of user
-                        journeys, prototype testing and to design sign-off
-                      </p>
-                      <p>
-                        • Initiated the introduction and implementation of Search Engine Optimization (SEO) services for
-                        clients using SEO tools and Google Analytics to improve web presence
-                      </p>
-                      <p>
-                        • Successfully raise the client’s profile and web presence by increasing its Domain Authority
-                        (DA) from 20 to 48
-                      </p>
-                      <p>
-                        • Liaised with the offshore team in Indonesia and the working team in Singapore to ensure that
-                        project requirements are translated accurately for product delivery
-                      </p>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
+                <h5 class="card-title">Being Extremely Versatile</h5>
+                <p class="card-text">Every Government sector is a different industry - finance, trade, healthcare, etc!
+                </p>
+                <h6 class="card-subtitle mb-2 text-muted">(I can be whoever I want… Don’t play play!)</h6>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-4 col-sm-12 col-center text-center">
-              <img src="images/floral-image.jpg" class="card-img" alt="work experiences">
+          <div class="col-md-6 col-sm-12 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Quick to Adapt</h5>
+                <p class="card-text">We may not be as good as Subject Matter Experts, but we strive to be similar!</p>
+                <h6 class="card-subtitle mb-2 text-muted">(Lots of researching and asking questions!)</h6>
+              </div>
             </div>
+          </div>
+        </div>
+        <!-- Second Row -->
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Working with Various Type of Users</h5>
+                <p class="card-text">We work with Members of the Public and even big-shots like CEOs and Directors!</p>
+                <h6 class="card-subtitle mb-2 text-muted">(Imagine that level of stress, phew!)</h6>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-sm-12 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Working with Tight Deadlines</h5>
+                <p class="card-text">It's important to have good time-management. Sometimes we can even perform the
+                  impossible!</p>
+                <h6 class="card-subtitle mb-2 text-muted">(Will I go to jail if I delay a project? *shudders*)</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
 
   </div>
-  <!--My Work Experiences-->
 
 
-  <!--Testimonials-->
-  <div class="section testimonials" id="testimonials">
-    <div class="container col-center">
+  <!-- End Area of expertise -->
+
+
+
+
+  <!-- My Work -->
+  <div class="section my-work">
+    <div class="container">
+
+      <div class="text-center main-title">
+        <h3 class="grad">my work</h3>
+        <h6 class="card-subtitle mb-2 text-muted mt-2">(Eh? Gahment projects can show one meh?)</h6>
+        <div class="subtitle">
+          <span>My portfolio is available upon request.</span><br>
+          <span>Meanwhile, here are some of my Non-Government related work. </span>
+        </div>
+      </div>
+
 
       <div class="row">
-        <div class="col main-title text-center">
-          <h5 class="card-title">testimonials</h5>
+        <div class="col-md-4 col-sm-12 col-center">
+          <h1>01</h1>
+          <h5>Mobile Application</h5>
+          <p>
+            A one-stop crisis management (for contagious diseases) mobile application for NCS Employees to perform
+            necessary measures needed to be taken during COVID-19.
+          </p>
+          <a class="btn btn-primary mt-2" href="ncsHackathon.html" role="button">View More</a>
+        </div>
+
+        <div class="col-md-8 col-sm-12 col-center text-center">
+          <img src="images/public/homepage/01-project-image.png" class="card-img" alt="mobile application">
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="row coloured-content">
 
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">
-                <hr>client</h5>
-              <p class="card-text">Tricia’s SEO reports have been valuable, providing useful insights to ways we can
-                improve the xx website. Responses to queries have also been prompt and thoughtful.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">
-                <hr>client</h5>
-              <p class="card-text">Tricia’s work on xx microsite is commendable. Tricia was able to adapt quickly and
-                provide us with revisions that pleased management. Through her experience, she provided valuable advice
-                about the UX to ensure that our target audience would be able to navigate the site seamlessly. She also
-                took the initiative to point out issues and provided excellent solutions that value-added to the
-                project.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">
-                <hr>team lead</h5>
-              <p class="card-text">Tricia excels in her work and is an asset to the team. Her bubbly personality helps
-                to maintain a cordial relationship with the users. Tricia is highly independent and committed to her
-                work. There are times where she has taken the extra mile to deliver more than what was requested. She
-                has always deliver her work on time and with a high level of quality with minimal supervision. </p>
-            </div>
-          </div>
+  <div class="section my-work">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-center text-center">
+          <img src="images/public/homepage/02-project-video.gif" class="card-img" alt="description of gif" />
         </div>
 
+        <div class="col-md-4 col-sm-12 col-center order-first order-md-last">
+          <h1>02</h1>
+          <h5>Conceptualisation</h5>
+          <p>
+            Who says Government sites can’t look good?There are plenty of ways to re-design them and still comply to
+            DSS! Here’s my take on Social Development Network (SDN).
+          </p>
+          <a class="btn btn-primary mt-2" href="sdnRevamp.html" role="button">View More</a>
+        </div>
       </div>
 
     </div>
   </div>
-  <!--End Testimonials-->
+
+
+  <div class="section my-work">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-center">
+          <h1>03</h1>
+          <h5>Web Design & Development</h5>
+          <p>
+            Double whammy! To hone my skills in front-end development, I like to start simple and work my way up. Here
+            are some of my own personal projects.
+          </p>
+          <a class="btn btn-primary mt-2" href="websiteDevelopment.html" role="button">View More</a>
+        </div>
+
+        <div class="col-md-8 col-sm-12 col-center text-center">
+          <p>
+            <img src="images/public/homepage/03-project-video.gif" class="card-img" alt="description of gif" />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End My Work -->
+
+
+  <!-- Government Sectors -->
+  <div class="section government-sectors">
+    <div class="container">
+      <div class="text-center main-title">
+        <h3 class="grad">government sectors I've worked with</h3>
+        <p class="subtitle">My portfolio is available upon request. </p>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/moe.png" class="card-img" alt="Ministry of Education">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/moh.png" class="card-img" alt="Ministry of Health">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/ica.png" class="card-img" alt="Immigration & Checkpoints Authority">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/ntp.png" class="card-img" alt="Networked Trade Portal">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/enterprisesingapore.png" class="card-img" alt="Enterprise Singapore">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/mewr.png" class="card-img"
+                alt="Ministry of Environment, Water and Resources">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/nhb.png" class="card-img" alt="National Heritage Board">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/public/homepage/smartnation.png" class="card-img" alt="Smart Nation">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Government Sectors -->
 
 
   <!--Contact Me-->
   <div class="section contact-me" id="contactMe">
     <div class="container">
 
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4 col-center text-center">
-            <img src="images/contact-me.JPG" class="card-img" alt="contact me">
-          </div>
-          <div class="col-md-8 col-center pr-md-2">
-            <div class="card-body main-title">
-              <h5 class="card-title">get in touch</h5>
-              <p class="card-text">If you’d like to work on a project together or just have a chat as like-minded
-                people, <b>do drop me an email!</b></p>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-center text-center">
+          <img src="images/public/homepage/get-to-know-me.png" class="card-img" alt="get to know me">
+        </div>
 
-              <div class="media">
-                <img class="align-self-start mr-3" src="./images/email.png" alt="tricia.ths@hotmail.com">
-                <div class="media-body">
-                  <p><b>TRICIA.THS@hotmail.com</b></p>
-                </div>
-              </div>
+        <div class="col-md-6 col-sm-12 col-center">
 
-            </div>
+          <div class="main-title">
+            <h3 class="grad">get to know me</h3>
           </div>
+
+          <p>Thank you for scrolling this far! This section is only for people who are interested and curious to know
+            more about me.</p>
+          <p>OR If you’d like to work on a project together or have a chat as like-minded people, <b>do drop me an
+              email!</b></p>
+
+          <div class="media-icon mb-4">
+            <img class="align-self-start mr-1" src="./images/public/homepage/email.png" alt="email me">
+            <b>TRICIA.THS@hotmail.com</b>
+          </div>
+
+          <a class="btn btn-primary" href="aboutMe.html" role="button">Come on in!</a>
         </div>
       </div>
-
     </div>
   </div>
   <!--End Contact Me-->
 
 
   <!-- Footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4 col-center text-center">
-            <img src="images/name-black.png" class="card-img" alt="Tricia Teo">
-          </div>
-          <div class="col-md-8 col-center pr-md-2">
-            <div class="card-body main-title">
-              <p class="card-text"><b>Credits</b></p>
-              <p class="card-text">Banner Photo by Jess @ Harper Sunday from Pexels | Sakura Photo by Evie Shaffer from
-                Pexels | Flower Bouquet Photo by sl wong from Pexels</p>
-              <p class="card-text"><b>Designed with Adobe XD and Illustrator, and developed by Tricia Teo.</b></p>
-            </div>
-          </div>
-        </div>
+  <div class="section footer">
+    <div class="container text-center">
+      <div class="mb-2">
+        <p><b>Designed and Developed by Tricia</b></p>
+      </div>
+      <div class="footer-date">
+        <p>Last Updated On 01 Jan 2021</p>
       </div>
     </div>
   </div>

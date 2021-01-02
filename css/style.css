@@ -1,12 +1,14 @@
+
+
 body {
 	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
-	/*font-family: 'Sacramento', cursive;
-	font-family: 'Homemade Apple', cursive;*/
+	font-family: 'PT Sans', sans-serif;
 	height: 100%;
 
 	color: #333;
 	font-size: 16px;
+	line-height: 1.5;
+	overflow-x: hidden;
 	/*Pink: #F5EAEB*/
 }
 
@@ -20,56 +22,109 @@ html {
 	max-height: 40px;
 }
 
-/*NAV*/
-.navbar-nav {
-	position:relative;
-	left: 50%;
-	transform: translateX(-50%);
-}
+h1 { font-size: 48px; font-weight: bold; }
+h2 { font-size: 32px; }
+h3 { font-size: 30px; font-weight: bold; display: inline;}
+h4 { font-size: 28px; font-weight: bold; display: inline;}
+h5 { font-size: 20px; font-weight: bold;}
 
-#navbarNavAltMarkup a {
-	margin-left: 2rem;
-}
 
-#navbarNavAltMarkup a:hover {
+/*BUTTONS AND LINKS*/
+.btn-primary {
+	border-radius: 30px;
+	padding: 10px 30px;
+	background-color: #F5EAEB;
 	color: #333;
+	border-color: #F5EAEB;
 	font-weight: 600;
 }
 
-#navbarDropdownItems a {
-	margin-left: 0;
+.btn-primary:hover {
+	background-color: #F5EAEB;
+	color: #333;
+	border-color: #F5EAEB;
+	box-shadow: 2px 2px 8px #d3d3d3;
 }
 
-#navbarDropdownItems a:visited {     
-	font-weight: 600;
-	background-color: #F3EDE6;
-	color: #333;    
+.btn-primary:focus { outline: none;  }
+
+.btn-primary:active { outline: none; }
+
+.btn-primary:visited { outline: none; }
+
+li {
+	margin: 20px 0;
+}
+/*END BUTTONS AND LINKS*/
+
+/*GENERAL*/
+.highlight {
+	background-color: #F5EAEB;
+}
+
+.media-icon img{
+	max-width: 20px;
+	max-height: 20px;
+}
+
+.subtitle {
+	margin: 20px 0 30px 0;
+}
+
+.grad {
+	padding: 0 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, #F5EAEB 50%, #F5EAEB 100%);
+}
+
+.main-title {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.inner-title {
+	margin-bottom: 30px;
+	margin-top: 100px;
+}
+
+
+
+.wireframe-text {
+	color: #bdbdbd;
+	font-size: 0.85rem;
+}
+
+.workshop img {
+	width:100%;
+	height:100%;
+}
+
+/*END GENERAL*/
+
+/*NAV*/
+.navbar {
+	background: rgba(255,255,255);
+	box-shadow: 2px 2px 8px #d3d3d3;
+	padding: 20px 200px;
 }
 
 .navbar-light .navbar-nav .nav-link {
 	color: #333;
-	
 }
 
-.navbar {
-	background: rgba(255,255,255,0.6);
-}
-
-.navbar-nav .active {
-	font-weight: 600;
-}
-
-.subpage-navbar .navbar {
-	background: #fff;
-	box-shadow: 2px 2px 8px #d3d3d3;
+.nav-item {
+	text-decoration: underline;
 }
 
 /*END NAV*/
 
 /*SIDE NAV*/
 	/* unvisited link */
+
 	.side-nav .list-group a {
 		color: #323232;
+		font-size: 18px;
+		padding: 5px 20px;
 	}
   
 	.side-nav .list-group-item.active{
@@ -79,27 +134,23 @@ html {
 	.side-nav .list-group .active a {
 		text-decoration: none;
 		color: #323232;
-		background-color: #F3EDE6; 
+		background-color: #F5EAEB; 
 		font-weight: 600;
 		border-radius: 50px;
-	}
-
-	.side-nav .list-group a {
-		padding: 5px 20px;
 	}
 
 	/* Mouse over link */
 	.side-nav .list-group .active a:hover {
 		text-decoration: none;
 		color: #323232;
-		background-color: #F3EDE6; 
+		background-color: #F5EAEB; 
 		font-weight: 600;
 		border-radius: 50px;
 	}
 
 	.side-nav .list-group a:hover {
 		color: #323232;
-		background-color: #F3EDE6; 
+		background-color: #F5EAEB; 
 		text-decoration: none;
 		font-weight: 600;
 		border-radius: 50px;
@@ -107,90 +158,31 @@ html {
 
 	.side-nav .list-group-item {
 		border: 0px;
+		padding: 5px 0;
 	}
+
+	.back-link a, a:hover {
+		color: #333;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	.dash {
+		font-size: 24px;
+		margin-right: 5px;
+	}
+
+	
 /*END SIDE NAV */
-
-
-/*HERO*/
-.hero-image {
-
-	/* Sizing */
-	width: 100%;
-	height: 110vh;
-
-	/* Flexbox stuff */
-	display: flex;
-
-	align-items: center;
-	justify-content: center;
-
-	/* Background styles */
-	background-image: url(../images/banner-image.png);
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-bottom: 5rem;
-	margin-top: -100px;
-}
-
-.hero-image h1 { 
-	font-family: 'Homemade Apple', cursive;
-}
-
-.hero-text {
-	/* Text styles */
-	text-align: center;
-	color: white; 
-	display:block;
-	padding-left: 6rem;
-	padding-right: 6rem;
-	margin-top: 6rem;
-}
-
-/*END HERO*/
-
-
-/*BANNER*/
-.banner-image {
-	/* Sizing */
-	width: 100%;
-	height: 42vh;
-
-	/* Flexbox stuff */
-	display: flex;
-	align-items: center;
-	/* Background styles */
-	background-image: url(../images/subpage-banner-scallop.png);
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-bottom: 2rem;
-	margin-top: -50px;
-}
-
-.banner-text {
-	/* Text styles */
-	display:block;
-	padding-left: 6rem;
-	padding-right: 6rem;
-	margin-top: 2rem;
-}
-
-.banner-text a{
-	color: #333;
-	font-family: 'Sacramento', cursive;
-	font-size: 1.5rem;
-}
-/*END BANNER*/
 
 
 /*SECTION*/
 .section {
-	padding: 3rem 0;
+	padding: 60px 200px;
 }
   
 .section + .section {
-	margin-top: 2rem;
+	margin-top: 100px;
 }
 
 .section-content {
@@ -199,90 +191,143 @@ html {
 	margin-right: auto;
 }
 
-.main-title .card-title {
-	font-family: 'Homemade Apple', cursive;
-	font-size: 2rem;
-	margin-bottom: 2rem;
-}
 /*END SECTION*/
 
 /*CARD*/
 .card {
 	border: none;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px #d3d3d3;
+	padding: 5px;
 }
 
 .col-center {
 	align-self: center;
 }
+
+.card-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.card-subtitle {
+	font-style: italic;
+	color: #707070;
+	font-size: 14px;
+}
+
+.card-grey {
+	background-color: #EEEEEE;
+	margin-bottom: 30px;
+}
+
+.card-pink {
+	background-color: #F5EAEB;
+}
 /*END CARD*/
 
 
-/*COLOURED CONTENT*/
-
-
-.coloured-content + .coloured-content {
-	margin-top: 2rem;
+/*ABOVE THE FOLD*/
+.above-the-fold img {
+	height: 450px;
+	width: auto;
 }
 
-.coloured-content hr {
-	width: 4rem;
-	float: left;
-	margin-right: 0.5rem;
-	color: #333;
-	border: 0.5px solid;
+.header-subtitle {
+	color: #707070;
+	font-size: 18px;
+	margin: 10px 0;
 }
 
-.coloured-content .card {
-	margin-right: 2rem;
-	background-color: transparent;
+.above-the-fold .media-icon {
+	margin: 10px 0 30px 0;
+	font-size: 14px;
+	color: #707070;
 }
 
-.coloured-content .card-title {
-	font-weight: 600;
+.typewriter h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid #F5EAEB; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .05em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: #F5EAEB; }
+  }
+
+/*END ABOVE THE FOLD*/
+
+
+/*AREA OF EXPERTISE*/
+
+/*END AREA OF EXPERTISE*/
+
+
+/*MY WORK*/
+.my-work h1 {
+	color: #CCCCCC;
+	font-family: 'Roboto', sans-serif;
 }
 
-.coloured-content .card-subtitle {
-	font-size: 20px;
-	font-weight: 600;
+.my-work img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
 }
 
-.coloured-content span {
-	font-family: 'Sacramento', cursive;
-}
-/*END COLOURED CONTENT*/
-
-
-/*MY PROJECTS*/
-.my-projects {
-	background-color: #F3EDE6;
+.my-work hr {
+    border: none;
+    height: 5px;
+    color: #F5EAEB;
+    background-color: #F5EAEB;
 }
 
-.my-projects .main-title {
-	margin: 2rem 0rem;
+/*END MY WORK*/
+
+/*GOVERNMENT SECTORS*/
+
+.government-sectors img {
+	filter: grayscale(100%);
 }
 
-.my-projects a {
-	color: #333;
+/*END GOVERNMENT SECTORS*/
+
+/*GET TO KNOW ME*/
+.contact-me img {
+	height: 400px;
+	width: auto;
+	border-radius: 20px;
 }
 
-.my-projects a:hover {
-	text-decoration: none;
-	background-color: #fff;
-	padding: 0.25rem 0.5rem;
-}
 
-.sideHustleLinks a {
-	color: #333;
-	font-size: 0.8rem;
-}
+/*END GET TO KNOW ME*/
 
-.sideHustleLinks a:hover {
-	text-decoration: none;
+
+/*FOOTER*/
+.footer {
 	background-color: #F5EAEB;
-	padding: 0.25rem 0.5rem;
-	border-radius: 50px;
 }
 
+.footer-date {
+	font-size: 14px;
+}
+/*ENDFOOTER */
+
+
+/*01 Project*/
 
 .add-bg-colour {
 	background-color: #F5EAEB;
@@ -292,135 +337,38 @@ html {
 	margin: 4rem 0 1rem 0;
 }
 
-/*END MY PROJECTS*/
-
-
-/*WORK EXPERIENCES*/
-.work-experiences .main-title {
-	margin: 2rem 0rem 0rem 2rem;
-}
-
-.work-experiences p {
-	margin-inline-start: 4rem;
-	margin-inline-end: 4rem;
-}
-
-.work-experiences .job-title {
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.work-experiences .job-duration {
-	margin-bottom: 2rem;
-	font-size: 14px;
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev{
-    display:block;
-}
-
-.carousel-control-next-icon {
-	background-image: url(../images/next.png);
-}
-
-.carousel-control-prev-icon {
-	background-image: url(../images/back.png);
-}
-
-/*END WORK EXPERIENCES*/
-
-
-/*TESTIMONIALS*/
-.testimonials{
-	/* Sizing */
-	width: 100%;
-	height: 100vh;
-
-	/* Flexbox stuff */
-	display: flex;
-
-	/* Background styles */
-	background-image: url(../images/section-scallop-image.png);
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-.testimonials .main-title {
-	margin-bottom: 2rem;
-}
-
-.testimonials .coloured-content .card-title {
-	font-family: 'Sacramento', cursive;
-}
-
-/*END TESTIMONIALS*/
-
-/*CONTACT ME*/
-.contact-me .media img{
-	width: 20px;
-	height: 20px;
-}
-
-.contact-me img{
-	width: 70%;
-}
-/*END CONTACT ME*/
-
-
-/*CONTENT HOLDER*/
-.content-holder h2 {
-	font-weight: 600;
-	font-size: 1.5rem;
-}
-
-.content-holder .row {
-	margin-bottom: 2rem;
-}
-
-.wireframe-text {
-	color: #bdbdbd;
-	font-size: 0.85rem;
-}
-
-.workshop img {
-	max-width: 200px;
-	max-height:250px;
-	padding: 1rem;
-}
-/*END CONTENT HOLDER*/
-
-
-/*FOOTER*/
-.footer {
-	background-color: #F3EDE6;
-	padding: 3rem 0rem;
-}
-
-.footer img {
-	width: 20%;
-}
-
-.footer .card {
-	background-color: transparent;
-}
-/*ENDFOOTER */
-
-
-
-/*VIDEO*/
-
-.video {
-	width:100%;
-	max-width:800px;
-	height:auto;
-  }
-
 .mobile-video {
-	width:100%;
-	max-height:500px;
-	width:auto;
-}
-/*ENDVIDEO*/
+	width: 100%;
+	height: 100%;
+} 
+/*End 01 Project*/
+
+
+/*Back to top*/
+	#backToTopBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #F5EAEB; /* Set a background color */
+	color: #333; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 10px 30px; /* Some padding */
+	border-radius: 30px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	border-color: #F5EAEB;
+	border-color: #F5EAEB;
+	font-weight: 600;
+  }
+  
+  #backToTopBtn:hover {
+	background-color: #F5EAEB;
+	color: #333;
+	border-color: #F5EAEB;
+	box-shadow: 2px 2px 8px #d3d3d3;
+  }
+/*End back to top*/
+

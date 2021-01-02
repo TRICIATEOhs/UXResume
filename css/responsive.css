@@ -1,78 +1,57 @@
 /* Small devices (landscape phones, 576px and below) */
 @media (max-width: 575px) { 
-	.main-title .card-title {
-		font-family: 'Homemade Apple', cursive;
-		font-size: 1.5rem;
-	}
-	
-	.navbar-light .navbar-nav .nav-link {
-		color: #333;
-		font-weight: 600;
-	}
 
-	.banner-text {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
 }
 
 /* Medium devices (tablets, 768px and below) */
 @media (max-width: 767px) {
-	.hero-text {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	} 
 
-	.work-experiences .card-img {
-		max-width: 100px;
-		max-height: 150px;
+	.section {
+		padding: 60px 50px;
+		text-align: center;
 	}
 
-	.about-me .card-img {
-		max-width: 300px;
-		max-height: 450px;
+	.prototype {
+		text-align: left;
 	}
 
-	.testimonials{
-		/* Sizing */
-		width: 100%;
-		height: max-content;
-	
-		/* Flexbox stuff */
-		display: flex;
-	
-		/* Background styles */
-		background-image: url(../images/section-scallop-image-mobile.png);
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
+	.above-the-fold img {
+		height: 300px;
+		width: auto;
 	}
 
-	.testimonials .main-title {
-		margin: 2rem 0rem;
+	.my-work img {
+		margin-top: 30px;
 	}
 
-	.contact-me img{
+	.contact-me img:not(.media-icon img) {
+		max-height: 300px;
+		width: auto;
+	}
+
+	.navbar {
+		/*To remove the hamburger menu padding in desktop*/
+		padding: 20px 20px;
+	}
+
+	.workshop {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		width: 50%;
-		margin-bottom: 2rem;
 	}
-	
+
+	.workshop img {
+		max-width: 250px;
+		height: auto;
+	}
+
+
 }
 
 /* Large devices (desktops, 992px and below) */
 @media (max-width: 991px) {
-	.navbar-nav {
-		background-color: #F3EDE6;
-	}
 
-	.navbar-light .navbar-nav .nav-link {
-		font-weight: normal;
-		color: #333;
-	}
-
-	#navbarNavAltMarkup a:hover {
-		font-weight: 600;
-	}
 }
 
 /* Extra large devices (large desktops, 1200px and below) */
