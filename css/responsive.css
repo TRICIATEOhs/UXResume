@@ -44,6 +44,10 @@
 		max-width: 250px;
 		height: auto;
 	}
+
+	.footer {
+		padding-bottom: 120px;
+	}
 }
 
 /* Large devices (desktops, 992px and below) */
