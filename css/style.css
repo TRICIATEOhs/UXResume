@@ -2,14 +2,18 @@
 
 body {
 	margin: 0;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	height: 100%;
 
-	color: #333;
+	color: #212427;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 32px;
 	overflow-x: hidden;
 	/*Pink: #F5EAEB*/
+}
+
+p {
+	margin: 24px 0;
 }
 
 html {
@@ -27,6 +31,7 @@ h2 { font-size: 32px; }
 h3 { font-size: 30px; font-weight: bold; display: inline;}
 h4 { font-size: 28px; font-weight: bold; display: inline;}
 h5 { font-size: 20px; font-weight: bold;}
+.highlight-subtitle { font-size: 14px; font-weight: normal; color:#bdbdbd; margin: 16px 0;}
 
 
 /*BUTTONS AND LINKS*/
@@ -34,27 +39,41 @@ h5 { font-size: 20px; font-weight: bold;}
 	border-radius: 30px;
 	padding: 10px 30px;
 	background-color: #F5EAEB;
-	color: #333;
+	color: #212427;
 	border-color: #F5EAEB;
 	font-weight: 600;
+	text-decoration: none;
 }
 
 .btn-primary:hover {
 	background-color: #F5EAEB;
-	color: #333;
+	color: #212427;
 	border-color: #F5EAEB;
 	box-shadow: 2px 2px 8px #d3d3d3;
+	font-size: 16px;
 }
 
-.btn-primary:focus { outline: none;  }
+.btn-primary:focus { outline: none; box-shadow: none;  }
 
-.btn-primary:active { outline: none; }
+.btn-primary:active { outline: none; box-shadow: none; }
 
-.btn-primary:visited { outline: none; }
+.btn-primary:visited { outline: none; box-shadow: none; }
+
 
 li {
 	margin: 20px 0;
 }
+
+.btn-link {
+	color: #212427;
+	text-decoration: none;
+}
+.btn-link:hover {
+	color: #212427;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
 /*END BUTTONS AND LINKS*/
 
 /*GENERAL*/
@@ -77,14 +96,14 @@ li {
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, #F5EAEB 50%, #F5EAEB 100%);
 }
 
+.grad-long {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, #F5EAEB 50%, #F5EAEB 100%);
+}
+
 .main-title {
 	margin-bottom: 2rem;
 	margin-top: 2rem;
-}
-
-.inner-title {
-	margin-bottom: 30px;
-	margin-top: 100px;
 }
 
 
@@ -109,11 +128,15 @@ li {
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: #333;
+	color: #212427;
 }
 
 .nav-item {
 	text-decoration: underline;
+}
+
+.navbar-nav {
+	margin-left: auto;
 }
 
 /*END NAV*/
@@ -162,7 +185,7 @@ li {
 	}
 
 	.back-link a, a:hover {
-		color: #333;
+		color: #212427;
 		font-weight: bold;
 		font-size: 18px;
 	}
@@ -172,6 +195,14 @@ li {
 		margin-right: 5px;
 	}
 
+	a {
+		color: #323232;
+		text-decoration: underline;
+	}
+
+	.list-group-flush a {
+		text-decoration: none;
+	}
 	
 /*END SIDE NAV */
 
@@ -182,7 +213,7 @@ li {
 }
   
 .section + .section {
-	margin-top: 100px;
+	margin-top: 40px;
 }
 
 .section-content {
@@ -191,6 +222,19 @@ li {
 	margin-right: auto;
 }
 
+
+
+
+.section-title h1 {
+	display: inline;
+	margin-right: 8px;
+	color:#EDEDED;
+}
+
+/* .section-title {
+	margin: 60px 0 24px 0; 
+} */
+
 /*END SECTION*/
 
 /*CARD*/
@@ -198,7 +242,11 @@ li {
 	border: none;
 	border-radius: 10px;
 	box-shadow: 2px 2px 8px #d3d3d3;
-	padding: 5px;
+	padding: 24px;
+}
+
+.card-body {
+	padding: 0;
 }
 
 .col-center {
@@ -218,18 +266,23 @@ li {
 
 .card-grey {
 	background-color: #EEEEEE;
-	margin-bottom: 30px;
 }
 
 .card-pink {
 	background-color: #F5EAEB;
 }
+
+.card-lined-pink {
+	border-left: 6px solid #F5EAEB;
+	padding-left: 40px;
+}
+
 /*END CARD*/
 
 
 /*ABOVE THE FOLD*/
 .above-the-fold img {
-	height: 450px;
+	height: 600px;
 	width: auto;
 }
 
@@ -245,56 +298,32 @@ li {
 	color: #707070;
 }
 
-.typewriter h1 {
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .15em solid #F5EAEB; /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .05em; /* Adjust as needed */
-	animation: 
-	  typing 3.5s steps(40, end),
-	  blink-caret .75s step-end infinite;
-	font-size: 2em;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: #F5EAEB; }
-  }
-
-/*END ABOVE THE FOLD*/
-
-
-/*AREA OF EXPERTISE*/
-
-/*END AREA OF EXPERTISE*/
 
 
 /*MY WORK*/
-.my-work h1 {
-	color: #CCCCCC;
-	font-family: 'Roboto', sans-serif;
+.my-work h1, .my-work-content h1 {
+	color: #EDEDED;
 }
 
-.my-work img {
+
+/* .my-work img {
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
+} */
+
+.icon img{
+	width: 32px;
+	height: 32px;
+	margin-right: 1em;
 }
 
-.my-work hr {
+/* .my-work hr {
     border: none;
     height: 5px;
     color: #F5EAEB;
     background-color: #F5EAEB;
-}
+} */
 
 /*END MY WORK*/
 
@@ -302,6 +331,14 @@ li {
 
 .government-sectors img {
 	filter: grayscale(100%);
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.government-sectors .card-body {
+	width: 200px;
+	height: 80px;
 }
 
 /*END GOVERNMENT SECTORS*/
@@ -335,7 +372,6 @@ li {
 	padding: 0.25rem 0.5rem;
 	border-radius: 50px;
 	text-align: center;
-	margin: 4rem 0 1rem 0;
 }
 
 .mobile-video {
@@ -355,7 +391,7 @@ li {
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
 	background-color: #F5EAEB; /* Set a background color */
-	color: #333; /* Text color */
+	color: #212427; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 10px 30px; /* Some padding */
 	border-radius: 30px; /* Rounded corners */
@@ -367,22 +403,56 @@ li {
   
   #backToTopBtn:hover {
 	background-color: #F5EAEB;
-	color: #333;
+	color: #212427;
 	border-color: #F5EAEB;
 	box-shadow: 2px 2px 8px #d3d3d3;
   }
 /*End back to top*/
 
 
-/*Christmas Theme*/
+/*Div Spacing*/
+	.small-spacing {
+		margin: 16px 0;
+	}
 
-  /* customizable snowflake styling */
-  .snowflake {
-    color: #fff;
-    font-size: 1em;
-    font-family: Arial, sans-serif;
-    text-shadow: 0 0 5px #000;
-  }
-  
-  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
-/*End Christmas Theme*/
+	.medium-spacing {
+		margin: 24px 0;
+	}
+
+	.large-spacing {
+		margin: 40px 0;
+	}
+
+	.xlarge-spacing {
+		margin: 60px 0;
+	}
+
+	.xxlarge-spacing {
+		margin: 100px 0;
+	}
+
+/*End of Div Spacing*/
+
+.accordion h1{
+	margin-right: 24px;
+}
+
+.accordion-button:not(.collapsed) {
+	background: none;
+	border: #F5EAEB;
+}
+
+.accordion {
+	--bs-accordion-btn-bg: none;
+	--bs-accordion-active-color: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+
+.number-title h1{
+	font-size: 100px;
+}

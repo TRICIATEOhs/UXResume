@@ -7,7 +7,7 @@
 @media (max-width: 767px) {
 	.section {
 		padding: 60px 50px;
-		text-align: center;
+		/* text-align: center; */
 	}
 
 	.prototype {
