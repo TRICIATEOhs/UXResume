@@ -249,6 +249,7 @@ li {
 	padding: 0;
 }
 
+
 .col-center {
 	align-self: center;
 }
@@ -312,18 +313,17 @@ li {
 	display: block;
 } */
 
+.media-icon {
+	align-items: center;
+}
+
 .icon img{
 	width: 32px;
 	height: 32px;
 	margin-right: 1em;
 }
 
-/* .my-work hr {
-    border: none;
-    height: 5px;
-    color: #F5EAEB;
-    background-color: #F5EAEB;
-} */
+
 
 /*END MY WORK*/
 
@@ -331,14 +331,16 @@ li {
 
 .government-sectors img {
 	filter: grayscale(100%);
-	width: 100%;
-	height: 100%;
+	width: 200px;
+	height: 80px;
 	object-fit: contain;
 }
 
 .government-sectors .card-body {
-	width: 200px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
 }
 
 /*END GOVERNMENT SECTORS*/
