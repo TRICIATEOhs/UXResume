@@ -458,3 +458,13 @@ li {
 .number-title h1{
 	font-size: 100px;
 }
+
+
+/*Video*/
+video::-webkit-media-controls-volume-slider {
+	display:none;
+}
+	
+video::-webkit-media-controls-mute-button {
+	display:none;
+}
