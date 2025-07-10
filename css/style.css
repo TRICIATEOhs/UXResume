@@ -490,7 +490,7 @@ video::-webkit-media-controls-mute-button {
 	display:none;
 }
 
-video {
+.gif_video img {
 	outline: 8px solid #F5EAEB;
   	outline-offset: -2px;
 	border-radius: 4px;
