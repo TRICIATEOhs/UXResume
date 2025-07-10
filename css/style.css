@@ -74,6 +74,7 @@ li {
 	text-decoration: underline;
 }
 
+
 /*END BUTTONS AND LINKS*/
 
 /*GENERAL*/
@@ -313,6 +314,26 @@ li {
 	display: block;
 } */
 
+
+/*Image to enlarge on hover*/
+.work-content img {
+    transition:transform 0.25s ease;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+	border-radius: 4px;
+
+}
+
+.work-content img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+.discover-reframe img {
+	filter: none;
+}
+
+
+
 .media-icon {
 	align-items: center;
 }
@@ -467,4 +488,10 @@ video::-webkit-media-controls-volume-slider {
 	
 video::-webkit-media-controls-mute-button {
 	display:none;
+}
+
+video {
+	outline: 8px solid #F5EAEB;
+  	outline-offset: -2px;
+	border-radius: 4px;
 }
