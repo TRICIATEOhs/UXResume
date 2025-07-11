@@ -1,5 +1,7 @@
 
 
+* { position: relative; }
+
 body {
 	margin: 0;
 	font-family: 'Poppins', sans-serif;
@@ -132,9 +134,9 @@ li {
 	color: #212427;
 }
 
-.nav-item {
+/*.nav-item {
 	text-decoration: underline;
-}
+}*/
 
 .navbar-nav {
 	margin-left: auto;
@@ -320,12 +322,12 @@ li {
     transition:transform 0.25s ease;
 	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 	border-radius: 4px;
-
 }
 
 .work-content img:hover {
-    -webkit-transform:scale(1.5); /* or some other value */
+    -webkit-transform:scale(1.5);
     transform:scale(1.5);
+	z-index: 9999;
 }
 
 .discover-reframe img {
