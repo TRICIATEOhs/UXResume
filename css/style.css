@@ -32,7 +32,13 @@ h1 { font-size: 48px; font-weight: bold; }
 h2 { font-size: 32px; }
 h3 { font-size: 30px; font-weight: bold; display: inline;}
 h4 { font-size: 28px; font-weight: bold; display: inline;}
-h5 { font-size: 20px; font-weight: bold;}
+h5 { font-size: 24px; font-weight: bold;}
+h6 { 
+	font-size: 20px; 
+	font-weight: bold;
+	border-bottom: 4px solid #dcb6ba;
+	padding: 24px 0 12px 0;
+	}
 .highlight-subtitle { font-size: 14px; font-weight: normal; color:#bdbdbd; margin: 16px 0;}
 
 
@@ -277,7 +283,7 @@ li {
 }
 
 .card-lined-pink {
-	border-left: 6px solid #F5EAEB;
+	border-left: 12px solid #F5EAEB;
 	padding-left: 40px;
 }
 
@@ -401,7 +407,6 @@ li {
 
 .mobile-video {
 	width: 100%;
-	height: 100%;
 } 
 /*End 01 Project*/
 
@@ -415,21 +420,21 @@ li {
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
-	background-color: #F5EAEB; /* Set a background color */
+	background-color: #edd9db; /* Set a background color */
 	color: #212427; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 10px 30px; /* Some padding */
 	border-radius: 30px; /* Rounded corners */
 	font-size: 18px; /* Increase font size */
-	border-color: #F5EAEB;
-	border-color: #F5EAEB;
+	border-color: #edd9db;
+	border-color: #edd9db;
 	font-weight: 600;
   }
   
   #backToTopBtn:hover {
-	background-color: #F5EAEB;
+	background-color: #dcb6ba;
 	color: #212427;
-	border-color: #F5EAEB;
+	border-color: #dcb6ba;
 	box-shadow: 2px 2px 8px #d3d3d3;
   }
 /*End back to top*/
@@ -441,15 +446,15 @@ li {
 	}
 
 	.medium-spacing {
-		margin: 24px 0;
-	}
-
-	.large-spacing {
 		margin: 40px 0;
 	}
 
-	.xlarge-spacing {
+	.large-spacing {
 		margin: 60px 0;
+	}
+
+	.xlarge-spacing {
+		margin: 80px 0;
 	}
 
 	.xxlarge-spacing {
@@ -497,3 +502,25 @@ video {
   	outline-offset: -2px;
 	border-radius: 4px;
 }
+
+
+
+
+
+  .password-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  input[type="password"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100
+  }
+  .error {
+    color: red;
+    margin-top: 0.5rem;
+  }
